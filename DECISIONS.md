@@ -131,3 +131,14 @@ Chronological record of every non-trivial decision made while building AcousticW
 - **Range caveat:** altitude is about 30 m in every flight, so range is largely the elevation angle, and the
   per-day gain difference also leaks loudness information. The range numbers are reported but flagged as not
   transferable.
+
+## 2026-10-09 — baselines (requested after the build)
+
+- **Detection baselines added** (`scripts/baselines.py`): logistic regression on log-mel mean and spread (60k
+  training windows, balanced, hard negatives 3×), and two learning-free rules: cepstral harmonicity, and the
+  2.7–7.7 kHz energy ratio. Thresholds come from validation only, as for the CNN.
+- **Result.** In-domain, the CNN is clearly better (strict recall 97.5% vs 79%). On the external set, its AUC
+  (0.79) is statistically tied with the learning-free rules (0.82–0.84, overlapping 95% group-bootstrap
+  intervals), and logistic regression is below chance (0.42). Reported as-is; not used to change any model.
+- **Localization** already had baselines: chance (90°), the trivial range guess (35 m), and the calibrated
+  SRP-PHAT beamformer.

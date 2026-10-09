@@ -19,6 +19,9 @@ datasets, because no public dataset has both large-scale detection negatives and
   chainsaws 12.7% (the weak spot).
 - **Independent external drone dataset: only about 15% recall.** The model does not yet generalise to unseen
   drones and microphones. This is the key limitation.
+- **Against baselines:** in-domain it clearly beats logistic regression on log-mel statistics (test AUC 0.9998
+  vs 0.977; recall 97.5% vs 79% at strict false-alarm settings). On the external set it is statistically tied
+  with two learning-free rules (AUC 0.79 vs 0.82–0.84, overlapping intervals).
 - **Range proxy:** 90% recall holds down to roughly 0 dB SNR (≈ 65–105 m under a +20 dB-at-10 m assumption).
 - **What it listens for:** 2.7–7.7 kHz motor whine, not mainly the rotor-harmonic comb.
 
@@ -29,6 +32,9 @@ datasets, because no public dataset has both large-scale detection negatives and
 - **Main failure:** a faint drone (the small Mini 2 at about 96 m, or a 149 m hover) loses out to a competing
   noise source, and the array points at that source. With a simulated directional engine interferer, the CNN
   is far more robust than the classical method (25° vs 57° at +20 dB SNR).
+- **Against baselines:** the CNN roughly ties a calibrated classical SRP-PHAT beamformer. It is worse on clean
+  signals (median 15.5° vs 10°), better on hard cases (mean 46° vs 53°) and much better with interference.
+  Range error is 24 m, against 35 m for guessing the typical distance. Chance level is a 90° median error.
 - **Feature importance:** the CNN relies mostly on spectral and level-difference cues (shuffling them adds
   11.7° of error, shuffling timing only 1.7°). The classical method gets its precision from timing. The two
   are complementary.
@@ -68,6 +74,7 @@ nvidia-smi -pl 220            # needs an elevated prompt; resets on reboot (trai
 .venv/Scripts/python scripts/evaluate.py   --out results/detect_v1
 .venv/Scripts/python scripts/robustness.py --out results/detect_v1
 .venv/Scripts/python scripts/explain.py    --out results/detect_v1
+.venv/Scripts/python scripts/baselines.py                 # logistic regression + two learning-free rules
 ```
 
 Stage 2 commands are in [localization/README.md](localization/README.md). Run GPU jobs one at a time. On

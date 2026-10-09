@@ -11,6 +11,9 @@
   catches 99.6% of drone windows with 0.86% false alarms; at the strict setting, 97.5% with 0.07% false alarms.
   Traffic engines, engine sounds and helicopters never triggered it, and real aircraft overflights only 0.9%
   of the time.
+- **Against simple baselines:** in-domain it clearly beats logistic regression (97.5% vs 79% recall at strict
+  false-alarm settings). On the independent dataset it is no better than two hand-written rules that use no
+  training at all.
 - **On a completely independent drone dataset, it largely fails.** Different drones, microphones and distances
   bring recall down to about 15% (AUC 0.79). **This is the most important result.** Public drone audio is
   dominated by close-range recordings of a few small quadcopters, and a detector trained on it does not yet
@@ -58,6 +61,37 @@ Each decision covers one 0.5 s window. The 95% intervals come from resampling wh
 ROC AUC is 0.9998 on the held-out test and **0.79 on the external set**
 ([results/detect_v1/roc.png](results/detect_v1/roc.png)). Averaging each clip's windows into one decision
 gives 99.8% recall and 1.3% false alarms on the test split, but only 17% recall on the external clips.
+
+## Against simple baselines
+
+Does the CNN earn its complexity? Three baselines were run on the same splits ([scripts/baselines.py](scripts/baselines.py),
+[results/baselines/](results/baselines/)), with thresholds chosen on validation in the same way:
+- **Logistic regression** on the same log-mel spectrogram, summarised as each band's mean and spread.
+- **A harmonicity rule** (no learning): how clear the harmonic stack is.
+- **A high-band energy rule** (no learning): the share of energy in 2.7–7.7 kHz, the band the CNN relies on.
+
+AUC intervals are 95% intervals from resampling whole recordings.
+
+| Method | Test AUC | Test recall @ standard / strict | External AUC | External recall @ standard |
+|---|---|---|---|---|
+| **CNN (v1)** | **0.9998** | **99.6% / 97.5%** | 0.79 (0.72–0.85) | 14.7% |
+| Logistic regression, log-mel stats | 0.977 | 94.3% / 79.0% | 0.42 (0.33–0.50) | 0% |
+| Harmonicity rule (no learning) | 0.44 | 0.2% / 0% | 0.82 (0.77–0.86) | 0% |
+| 2.7–7.7 kHz energy rule (no learning) | 0.49 | 0% / 0% | **0.84** (0.77–0.90) | 0% |
+
+How to read this:
+- **In-domain, the CNN clearly earns its keep.** At strict false-alarm settings it catches 97.5% of drones;
+  the best simple model catches 79%. Its hard-negative false alarms (1.0%) are comparable to logistic
+  regression's (0.5%).
+- **Out of domain, nothing learned generalises.** Logistic regression falls *below* chance (0.42). The CNN's
+  external AUC is statistically indistinguishable from two rules that use no training at all; their
+  intervals overlap.
+- **No method is usable on the external set at a threshold chosen on in-domain validation data.** The
+  learning-free rules rank external drones above external non-drones reasonably well, but their in-domain
+  thresholds catch nothing there. A deployed sensor would need calibration data from its own site and microphone.
+- **Caveat on the rules' external AUC.** The external negatives are helicopters and wind-dominated background,
+  both heavy in low frequencies, so "more high-frequency energy" may partly reflect that set's make-up rather
+  than real drone recognition. With only 90 clips, it is a small test.
 
 ## False positives on engine and aircraft sounds
 
@@ -205,5 +239,5 @@ evidence that the in-domain numbers are optimistic is the external test, not lea
     spectral analysis.
   - `results/archive_fixed_block_split/`: earlier split, including the rejected v2.
 - `scripts/`: `download_data.py` → `check_dads_adjacency.py --all` → `prepare_data.py` → `train.py` →
-  `evaluate.py` → `robustness.py` → `explain.py`
+  `evaluate.py` → `robustness.py` → `explain.py` → `baselines.py`
 - `src/acousticwatch/`: shared code (features, model, data store, GPU guard, training loop, plot style).
