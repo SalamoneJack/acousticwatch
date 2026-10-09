@@ -1,0 +1,253 @@
+drone_set,background,model,attenuation_db,distance_m_assumed,effective_snr_db,recall_standard,recall_strict,mean_prob
+DADS test,pink noise,broadband,0.0000,10.0000,20.0000,0.9937,0.9773,0.9897
+DADS test,pink noise,broadband,2.5000,13.3352,17.5000,0.9943,0.9807,0.9908
+DADS test,pink noise,broadband,5.0000,17.7828,15.0000,0.9947,0.9833,0.9913
+DADS test,pink noise,broadband,7.5000,23.7137,12.5000,0.9943,0.9843,0.9915
+DADS test,pink noise,broadband,10.0000,31.6228,10.0000,0.9933,0.9827,0.9911
+DADS test,pink noise,broadband,12.5000,42.1697,7.5000,0.9927,0.9787,0.9892
+DADS test,pink noise,broadband,15.0000,56.2341,5.0000,0.9883,0.9720,0.9848
+DADS test,pink noise,broadband,17.5000,74.9894,2.5000,0.9837,0.8993,0.9632
+DADS test,pink noise,broadband,20.0000,100.0000,0.0000,0.9007,0.4440,0.7866
+DADS test,pink noise,broadband,22.5000,133.3521,-2.5000,0.4220,0.0570,0.3241
+DADS test,pink noise,broadband,25.0000,177.8279,-5.0000,0.0603,0.0117,0.0677
+DADS test,pink noise,broadband,27.5000,237.1374,-7.5000,0.0137,0.0043,0.0247
+DADS test,pink noise,broadband,30.0000,316.2278,-10.0000,0.0050,0.0003,0.0167
+DADS test,pink noise,broadband,32.5000,421.6965,-12.5000,0.0010,0.0000,0.0169
+DADS test,pink noise,broadband,35.0000,562.3413,-15.0000,0.0000,0.0000,0.0195
+DADS test,pink noise,broadband,37.5000,749.8942,-17.5000,0.0000,0.0000,0.0221
+DADS test,pink noise,broadband,40.0000,1000.0000,-20.0000,0.0000,0.0000,0.0238
+DADS test,pink noise,broadband,42.5000,1333.5214,-22.5000,0.0000,0.0000,0.0248
+DADS test,pink noise,broadband,45.0000,1778.2794,-25.0000,0.0000,0.0000,0.0254
+DADS test,pink noise,broadband,47.5000,2371.3737,-27.5000,0.0000,0.0000,0.0257
+DADS test,pink noise,broadband,50.0000,3162.2777,-30.0000,0.0000,0.0000,0.0259
+DADS test,pink noise,distance,0.0000,10.0000,20.0000,0.9937,0.9773,0.9897
+DADS test,pink noise,distance,2.5000,13.3352,17.4899,0.9943,0.9807,0.9907
+DADS test,pink noise,distance,5.0000,17.7828,14.9766,0.9943,0.9830,0.9913
+DADS test,pink noise,distance,7.5000,23.7137,12.4594,0.9943,0.9837,0.9914
+DADS test,pink noise,distance,10.0000,31.6228,9.9370,0.9927,0.9813,0.9908
+DADS test,pink noise,distance,12.5000,42.1697,7.4084,0.9913,0.9783,0.9879
+DADS test,pink noise,distance,15.0000,56.2341,4.8719,0.9867,0.9650,0.9822
+DADS test,pink noise,distance,17.5000,74.9894,2.3260,0.9773,0.8670,0.9497
+DADS test,pink noise,distance,20.0000,100.0000,-0.2313,0.8653,0.3677,0.7325
+DADS test,pink noise,distance,22.5000,133.3521,-2.8021,0.3373,0.0330,0.2579
+DADS test,pink noise,distance,25.0000,177.8279,-5.3891,0.0337,0.0017,0.0428
+DADS test,pink noise,distance,27.5000,237.1374,-7.9963,0.0013,0.0000,0.0144
+DADS test,pink noise,distance,30.0000,316.2278,-10.6288,0.0000,0.0000,0.0134
+DADS test,pink noise,distance,32.5000,421.6965,-13.2940,0.0000,0.0000,0.0164
+DADS test,pink noise,distance,35.0000,562.3413,-16.0017,0.0000,0.0000,0.0199
+DADS test,pink noise,distance,37.5000,749.8942,-18.7646,0.0000,0.0000,0.0225
+DADS test,pink noise,distance,40.0000,1000.0000,-21.5989,0.0000,0.0000,0.0242
+DADS test,pink noise,distance,42.5000,1333.5214,-24.5249,0.0000,0.0000,0.0251
+DADS test,pink noise,distance,45.0000,1778.2794,-27.5676,0.0000,0.0000,0.0256
+DADS test,pink noise,distance,47.5000,2371.3737,-30.7563,0.0000,0.0000,0.0259
+DADS test,pink noise,distance,50.0000,3162.2777,-34.1238,0.0000,0.0000,0.0260
+DADS test,outdoor ambience,broadband,0.0000,10.0000,20.0000,0.9930,0.9760,0.9890
+DADS test,outdoor ambience,broadband,2.5000,13.3352,17.5000,0.9937,0.9800,0.9899
+DADS test,outdoor ambience,broadband,5.0000,17.7828,15.0000,0.9933,0.9807,0.9904
+DADS test,outdoor ambience,broadband,7.5000,23.7137,12.5000,0.9933,0.9803,0.9903
+DADS test,outdoor ambience,broadband,10.0000,31.6228,10.0000,0.9923,0.9783,0.9887
+DADS test,outdoor ambience,broadband,12.5000,42.1697,7.5000,0.9893,0.9670,0.9835
+DADS test,outdoor ambience,broadband,15.0000,56.2341,5.0000,0.9780,0.8660,0.9516
+DADS test,outdoor ambience,broadband,17.5000,74.9894,2.5000,0.8700,0.4750,0.7733
+DADS test,outdoor ambience,broadband,20.0000,100.0000,0.0000,0.4947,0.1160,0.3903
+DADS test,outdoor ambience,broadband,22.5000,133.3521,-2.5000,0.1557,0.0373,0.1304
+DADS test,outdoor ambience,broadband,25.0000,177.8279,-5.0000,0.0663,0.0213,0.0556
+DADS test,outdoor ambience,broadband,27.5000,237.1374,-7.5000,0.0343,0.0100,0.0297
+DADS test,outdoor ambience,broadband,30.0000,316.2278,-10.0000,0.0153,0.0050,0.0146
+DADS test,outdoor ambience,broadband,32.5000,421.6965,-12.5000,0.0087,0.0027,0.0073
+DADS test,outdoor ambience,broadband,35.0000,562.3413,-15.0000,0.0040,0.0010,0.0040
+DADS test,outdoor ambience,broadband,37.5000,749.8942,-17.5000,0.0020,0.0010,0.0027
+DADS test,outdoor ambience,broadband,40.0000,1000.0000,-20.0000,0.0013,0.0000,0.0021
+DADS test,outdoor ambience,broadband,42.5000,1333.5214,-22.5000,0.0010,0.0000,0.0015
+DADS test,outdoor ambience,broadband,45.0000,1778.2794,-25.0000,0.0003,0.0000,0.0012
+DADS test,outdoor ambience,broadband,47.5000,2371.3737,-27.5000,0.0000,0.0000,0.0011
+DADS test,outdoor ambience,broadband,50.0000,3162.2777,-30.0000,0.0000,0.0000,0.0011
+DADS test,outdoor ambience,distance,0.0000,10.0000,20.0000,0.9930,0.9760,0.9890
+DADS test,outdoor ambience,distance,2.5000,13.3352,17.4899,0.9940,0.9797,0.9898
+DADS test,outdoor ambience,distance,5.0000,17.7828,14.9766,0.9937,0.9800,0.9902
+DADS test,outdoor ambience,distance,7.5000,23.7137,12.4594,0.9933,0.9790,0.9897
+DADS test,outdoor ambience,distance,10.0000,31.6228,9.9370,0.9907,0.9760,0.9868
+DADS test,outdoor ambience,distance,12.5000,42.1697,7.4084,0.9853,0.9510,0.9763
+DADS test,outdoor ambience,distance,15.0000,56.2341,4.8719,0.9627,0.7733,0.9168
+DADS test,outdoor ambience,distance,17.5000,74.9894,2.3260,0.7953,0.3300,0.6743
+DADS test,outdoor ambience,distance,20.0000,100.0000,-0.2313,0.3730,0.0673,0.2866
+DADS test,outdoor ambience,distance,22.5000,133.3521,-2.8021,0.1040,0.0197,0.0848
+DADS test,outdoor ambience,distance,25.0000,177.8279,-5.3891,0.0320,0.0040,0.0276
+DADS test,outdoor ambience,distance,27.5000,237.1374,-7.9963,0.0093,0.0010,0.0092
+DADS test,outdoor ambience,distance,30.0000,316.2278,-10.6288,0.0027,0.0000,0.0031
+DADS test,outdoor ambience,distance,32.5000,421.6965,-13.2940,0.0003,0.0000,0.0013
+DADS test,outdoor ambience,distance,35.0000,562.3413,-16.0017,0.0000,0.0000,0.0009
+DADS test,outdoor ambience,distance,37.5000,749.8942,-18.7646,0.0000,0.0000,0.0009
+DADS test,outdoor ambience,distance,40.0000,1000.0000,-21.5989,0.0000,0.0000,0.0009
+DADS test,outdoor ambience,distance,42.5000,1333.5214,-24.5249,0.0000,0.0000,0.0010
+DADS test,outdoor ambience,distance,45.0000,1778.2794,-27.5676,0.0000,0.0000,0.0010
+DADS test,outdoor ambience,distance,47.5000,2371.3737,-30.7563,0.0000,0.0000,0.0010
+DADS test,outdoor ambience,distance,50.0000,3162.2777,-34.1238,0.0000,0.0000,0.0010
+DADS test,traffic engine noise,broadband,0.0000,10.0000,20.0000,0.9927,0.9797,0.9894
+DADS test,traffic engine noise,broadband,2.5000,13.3352,17.5000,0.9937,0.9817,0.9906
+DADS test,traffic engine noise,broadband,5.0000,17.7828,15.0000,0.9933,0.9847,0.9913
+DADS test,traffic engine noise,broadband,7.5000,23.7137,12.5000,0.9940,0.9843,0.9916
+DADS test,traffic engine noise,broadband,10.0000,31.6228,10.0000,0.9940,0.9823,0.9908
+DADS test,traffic engine noise,broadband,12.5000,42.1697,7.5000,0.9910,0.9627,0.9842
+DADS test,traffic engine noise,broadband,15.0000,56.2341,5.0000,0.9630,0.8110,0.9279
+DADS test,traffic engine noise,broadband,17.5000,74.9894,2.5000,0.8110,0.5020,0.7383
+DADS test,traffic engine noise,broadband,20.0000,100.0000,0.0000,0.6400,0.2140,0.5183
+DADS test,traffic engine noise,broadband,22.5000,133.3521,-2.5000,0.4117,0.0677,0.3042
+DADS test,traffic engine noise,broadband,25.0000,177.8279,-5.0000,0.1957,0.0267,0.1547
+DADS test,traffic engine noise,broadband,27.5000,237.1374,-7.5000,0.0820,0.0133,0.0778
+DADS test,traffic engine noise,broadband,30.0000,316.2278,-10.0000,0.0370,0.0093,0.0450
+DADS test,traffic engine noise,broadband,32.5000,421.6965,-12.5000,0.0233,0.0057,0.0341
+DADS test,traffic engine noise,broadband,35.0000,562.3413,-15.0000,0.0237,0.0033,0.0319
+DADS test,traffic engine noise,broadband,37.5000,749.8942,-17.5000,0.0227,0.0010,0.0313
+DADS test,traffic engine noise,broadband,40.0000,1000.0000,-20.0000,0.0210,0.0000,0.0304
+DADS test,traffic engine noise,broadband,42.5000,1333.5214,-22.5000,0.0187,0.0000,0.0291
+DADS test,traffic engine noise,broadband,45.0000,1778.2794,-25.0000,0.0160,0.0000,0.0286
+DADS test,traffic engine noise,broadband,47.5000,2371.3737,-27.5000,0.0137,0.0000,0.0284
+DADS test,traffic engine noise,broadband,50.0000,3162.2777,-30.0000,0.0133,0.0000,0.0283
+DADS test,traffic engine noise,distance,0.0000,10.0000,20.0000,0.9927,0.9797,0.9894
+DADS test,traffic engine noise,distance,2.5000,13.3352,17.4899,0.9937,0.9820,0.9905
+DADS test,traffic engine noise,distance,5.0000,17.7828,14.9766,0.9933,0.9843,0.9911
+DADS test,traffic engine noise,distance,7.5000,23.7137,12.4594,0.9937,0.9840,0.9911
+DADS test,traffic engine noise,distance,10.0000,31.6228,9.9370,0.9933,0.9810,0.9890
+DADS test,traffic engine noise,distance,12.5000,42.1697,7.4084,0.9877,0.9353,0.9761
+DADS test,traffic engine noise,distance,15.0000,56.2341,4.8719,0.9427,0.7260,0.8870
+DADS test,traffic engine noise,distance,17.5000,74.9894,2.3260,0.7683,0.4097,0.6864
+DADS test,traffic engine noise,distance,20.0000,100.0000,-0.2313,0.5953,0.1513,0.4681
+DADS test,traffic engine noise,distance,22.5000,133.3521,-2.8021,0.3717,0.0367,0.2615
+DADS test,traffic engine noise,distance,25.0000,177.8279,-5.3891,0.1437,0.0080,0.1142
+DADS test,traffic engine noise,distance,27.5000,237.1374,-7.9963,0.0320,0.0020,0.0444
+DADS test,traffic engine noise,distance,30.0000,316.2278,-10.6288,0.0113,0.0000,0.0245
+DADS test,traffic engine noise,distance,32.5000,421.6965,-13.2940,0.0120,0.0000,0.0228
+DADS test,traffic engine noise,distance,35.0000,562.3413,-16.0017,0.0167,0.0000,0.0254
+DADS test,traffic engine noise,distance,37.5000,749.8942,-18.7646,0.0177,0.0000,0.0274
+DADS test,traffic engine noise,distance,40.0000,1000.0000,-21.5989,0.0173,0.0000,0.0281
+DADS test,traffic engine noise,distance,42.5000,1333.5214,-24.5249,0.0150,0.0000,0.0282
+DADS test,traffic engine noise,distance,45.0000,1778.2794,-27.5676,0.0140,0.0000,0.0283
+DADS test,traffic engine noise,distance,47.5000,2371.3737,-30.7563,0.0137,0.0000,0.0284
+DADS test,traffic engine noise,distance,50.0000,3162.2777,-34.1238,0.0140,0.0000,0.0285
+External (Svanström),pink noise,broadband,0.0000,10.0000,20.0000,0.1333,0.0200,0.1135
+External (Svanström),pink noise,broadband,2.5000,13.3352,17.5000,0.1567,0.0283,0.1269
+External (Svanström),pink noise,broadband,5.0000,17.7828,15.0000,0.1750,0.0367,0.1402
+External (Svanström),pink noise,broadband,7.5000,23.7137,12.5000,0.1817,0.0483,0.1542
+External (Svanström),pink noise,broadband,10.0000,31.6228,10.0000,0.1933,0.0550,0.1669
+External (Svanström),pink noise,broadband,12.5000,42.1697,7.5000,0.2067,0.0650,0.1758
+External (Svanström),pink noise,broadband,15.0000,56.2341,5.0000,0.2000,0.0683,0.1737
+External (Svanström),pink noise,broadband,17.5000,74.9894,2.5000,0.1817,0.0517,0.1573
+External (Svanström),pink noise,broadband,20.0000,100.0000,0.0000,0.1550,0.0283,0.1257
+External (Svanström),pink noise,broadband,22.5000,133.3521,-2.5000,0.0850,0.0050,0.0770
+External (Svanström),pink noise,broadband,25.0000,177.8279,-5.0000,0.0217,0.0000,0.0418
+External (Svanström),pink noise,broadband,27.5000,237.1374,-7.5000,0.0017,0.0000,0.0277
+External (Svanström),pink noise,broadband,30.0000,316.2278,-10.0000,0.0000,0.0000,0.0251
+External (Svanström),pink noise,broadband,32.5000,421.6965,-12.5000,0.0000,0.0000,0.0253
+External (Svanström),pink noise,broadband,35.0000,562.3413,-15.0000,0.0000,0.0000,0.0256
+External (Svanström),pink noise,broadband,37.5000,749.8942,-17.5000,0.0000,0.0000,0.0257
+External (Svanström),pink noise,broadband,40.0000,1000.0000,-20.0000,0.0000,0.0000,0.0256
+External (Svanström),pink noise,broadband,42.5000,1333.5214,-22.5000,0.0000,0.0000,0.0253
+External (Svanström),pink noise,broadband,45.0000,1778.2794,-25.0000,0.0000,0.0000,0.0251
+External (Svanström),pink noise,broadband,47.5000,2371.3737,-27.5000,0.0000,0.0000,0.0251
+External (Svanström),pink noise,broadband,50.0000,3162.2777,-30.0000,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,0.0000,10.0000,20.0000,0.1333,0.0200,0.1135
+External (Svanström),pink noise,distance,2.5000,13.3352,17.4591,0.1567,0.0283,0.1275
+External (Svanström),pink noise,distance,5.0000,17.7828,14.9061,0.1767,0.0367,0.1423
+External (Svanström),pink noise,distance,7.5000,23.7137,12.3377,0.1867,0.0500,0.1586
+External (Svanström),pink noise,distance,10.0000,31.6228,9.7508,0.2017,0.0567,0.1741
+External (Svanström),pink noise,distance,12.5000,42.1697,7.1418,0.2167,0.0667,0.1855
+External (Svanström),pink noise,distance,15.0000,56.2341,4.5076,0.2100,0.0750,0.1821
+External (Svanström),pink noise,distance,17.5000,74.9894,1.8462,0.1883,0.0450,0.1640
+External (Svanström),pink noise,distance,20.0000,100.0000,-0.8426,0.1533,0.0133,0.1246
+External (Svanström),pink noise,distance,22.5000,133.3521,-3.5573,0.0583,0.0033,0.0694
+External (Svanström),pink noise,distance,25.0000,177.8279,-6.2948,0.0117,0.0000,0.0394
+External (Svanström),pink noise,distance,27.5000,237.1374,-9.0532,0.0000,0.0000,0.0278
+External (Svanström),pink noise,distance,30.0000,316.2278,-11.8340,0.0000,0.0000,0.0252
+External (Svanström),pink noise,distance,32.5000,421.6965,-14.6431,0.0000,0.0000,0.0247
+External (Svanström),pink noise,distance,35.0000,562.3413,-17.4883,0.0000,0.0000,0.0249
+External (Svanström),pink noise,distance,37.5000,749.8942,-20.3762,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,40.0000,1000.0000,-23.3099,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,42.5000,1333.5214,-26.2877,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,45.0000,1778.2794,-29.3023,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,47.5000,2371.3737,-32.3412,0.0000,0.0000,0.0250
+External (Svanström),pink noise,distance,50.0000,3162.2777,-35.3901,0.0000,0.0000,0.0250
+External (Svanström),outdoor ambience,broadband,0.0000,10.0000,20.0000,0.1267,0.0183,0.1058
+External (Svanström),outdoor ambience,broadband,2.5000,13.3352,17.5000,0.1400,0.0200,0.1141
+External (Svanström),outdoor ambience,broadband,5.0000,17.7828,15.0000,0.1450,0.0267,0.1199
+External (Svanström),outdoor ambience,broadband,7.5000,23.7137,12.5000,0.1550,0.0267,0.1224
+External (Svanström),outdoor ambience,broadband,10.0000,31.6228,10.0000,0.1500,0.0217,0.1202
+External (Svanström),outdoor ambience,broadband,12.5000,42.1697,7.5000,0.1433,0.0150,0.1113
+External (Svanström),outdoor ambience,broadband,15.0000,56.2341,5.0000,0.1200,0.0100,0.0919
+External (Svanström),outdoor ambience,broadband,17.5000,74.9894,2.5000,0.0833,0.0050,0.0665
+External (Svanström),outdoor ambience,broadband,20.0000,100.0000,0.0000,0.0500,0.0017,0.0409
+External (Svanström),outdoor ambience,broadband,22.5000,133.3521,-2.5000,0.0183,0.0000,0.0233
+External (Svanström),outdoor ambience,broadband,25.0000,177.8279,-5.0000,0.0133,0.0017,0.0152
+External (Svanström),outdoor ambience,broadband,27.5000,237.1374,-7.5000,0.0100,0.0017,0.0117
+External (Svanström),outdoor ambience,broadband,30.0000,316.2278,-10.0000,0.0083,0.0000,0.0088
+External (Svanström),outdoor ambience,broadband,32.5000,421.6965,-12.5000,0.0067,0.0000,0.0062
+External (Svanström),outdoor ambience,broadband,35.0000,562.3413,-15.0000,0.0033,0.0000,0.0034
+External (Svanström),outdoor ambience,broadband,37.5000,749.8942,-17.5000,0.0000,0.0000,0.0018
+External (Svanström),outdoor ambience,broadband,40.0000,1000.0000,-20.0000,0.0000,0.0000,0.0013
+External (Svanström),outdoor ambience,broadband,42.5000,1333.5214,-22.5000,0.0000,0.0000,0.0011
+External (Svanström),outdoor ambience,broadband,45.0000,1778.2794,-25.0000,0.0000,0.0000,0.0011
+External (Svanström),outdoor ambience,broadband,47.5000,2371.3737,-27.5000,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,broadband,50.0000,3162.2777,-30.0000,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,distance,0.0000,10.0000,20.0000,0.1267,0.0183,0.1058
+External (Svanström),outdoor ambience,distance,2.5000,13.3352,17.4591,0.1417,0.0183,0.1143
+External (Svanström),outdoor ambience,distance,5.0000,17.7828,14.9061,0.1483,0.0267,0.1202
+External (Svanström),outdoor ambience,distance,7.5000,23.7137,12.3377,0.1550,0.0250,0.1224
+External (Svanström),outdoor ambience,distance,10.0000,31.6228,9.7508,0.1567,0.0133,0.1187
+External (Svanström),outdoor ambience,distance,12.5000,42.1697,7.1418,0.1417,0.0133,0.1061
+External (Svanström),outdoor ambience,distance,15.0000,56.2341,4.5076,0.1067,0.0083,0.0817
+External (Svanström),outdoor ambience,distance,17.5000,74.9894,1.8462,0.0683,0.0050,0.0539
+External (Svanström),outdoor ambience,distance,20.0000,100.0000,-0.8426,0.0250,0.0000,0.0268
+External (Svanström),outdoor ambience,distance,22.5000,133.3521,-3.5573,0.0100,0.0000,0.0119
+External (Svanström),outdoor ambience,distance,25.0000,177.8279,-6.2948,0.0067,0.0000,0.0082
+External (Svanström),outdoor ambience,distance,27.5000,237.1374,-9.0532,0.0050,0.0000,0.0066
+External (Svanström),outdoor ambience,distance,30.0000,316.2278,-11.8340,0.0050,0.0000,0.0050
+External (Svanström),outdoor ambience,distance,32.5000,421.6965,-14.6431,0.0033,0.0000,0.0031
+External (Svanström),outdoor ambience,distance,35.0000,562.3413,-17.4883,0.0000,0.0000,0.0016
+External (Svanström),outdoor ambience,distance,37.5000,749.8942,-20.3762,0.0000,0.0000,0.0012
+External (Svanström),outdoor ambience,distance,40.0000,1000.0000,-23.3099,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,distance,42.5000,1333.5214,-26.2877,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,distance,45.0000,1778.2794,-29.3023,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,distance,47.5000,2371.3737,-32.3412,0.0000,0.0000,0.0010
+External (Svanström),outdoor ambience,distance,50.0000,3162.2777,-35.3901,0.0000,0.0000,0.0010
+External (Svanström),traffic engine noise,broadband,0.0000,10.0000,20.0000,0.1217,0.0167,0.1064
+External (Svanström),traffic engine noise,broadband,2.5000,13.3352,17.5000,0.1367,0.0183,0.1155
+External (Svanström),traffic engine noise,broadband,5.0000,17.7828,15.0000,0.1450,0.0217,0.1226
+External (Svanström),traffic engine noise,broadband,7.5000,23.7137,12.5000,0.1600,0.0233,0.1280
+External (Svanström),traffic engine noise,broadband,10.0000,31.6228,10.0000,0.1667,0.0217,0.1308
+External (Svanström),traffic engine noise,broadband,12.5000,42.1697,7.5000,0.1517,0.0267,0.1307
+External (Svanström),traffic engine noise,broadband,15.0000,56.2341,5.0000,0.1600,0.0217,0.1296
+External (Svanström),traffic engine noise,broadband,17.5000,74.9894,2.5000,0.1600,0.0200,0.1261
+External (Svanström),traffic engine noise,broadband,20.0000,100.0000,0.0000,0.1500,0.0200,0.1173
+External (Svanström),traffic engine noise,broadband,22.5000,133.3521,-2.5000,0.1217,0.0167,0.1028
+External (Svanström),traffic engine noise,broadband,25.0000,177.8279,-5.0000,0.1067,0.0067,0.0817
+External (Svanström),traffic engine noise,broadband,27.5000,237.1374,-7.5000,0.0633,0.0000,0.0537
+External (Svanström),traffic engine noise,broadband,30.0000,316.2278,-10.0000,0.0200,0.0000,0.0305
+External (Svanström),traffic engine noise,broadband,32.5000,421.6965,-12.5000,0.0033,0.0000,0.0207
+External (Svanström),traffic engine noise,broadband,35.0000,562.3413,-15.0000,0.0017,0.0000,0.0185
+External (Svanström),traffic engine noise,broadband,37.5000,749.8942,-17.5000,0.0033,0.0000,0.0190
+External (Svanström),traffic engine noise,broadband,40.0000,1000.0000,-20.0000,0.0033,0.0000,0.0201
+External (Svanström),traffic engine noise,broadband,42.5000,1333.5214,-22.5000,0.0033,0.0000,0.0211
+External (Svanström),traffic engine noise,broadband,45.0000,1778.2794,-25.0000,0.0050,0.0000,0.0220
+External (Svanström),traffic engine noise,broadband,47.5000,2371.3737,-27.5000,0.0067,0.0000,0.0226
+External (Svanström),traffic engine noise,broadband,50.0000,3162.2777,-30.0000,0.0067,0.0000,0.0230
+External (Svanström),traffic engine noise,distance,0.0000,10.0000,20.0000,0.1217,0.0167,0.1064
+External (Svanström),traffic engine noise,distance,2.5000,13.3352,17.4591,0.1350,0.0183,0.1157
+External (Svanström),traffic engine noise,distance,5.0000,17.7828,14.9061,0.1467,0.0183,0.1229
+External (Svanström),traffic engine noise,distance,7.5000,23.7137,12.3377,0.1583,0.0217,0.1278
+External (Svanström),traffic engine noise,distance,10.0000,31.6228,9.7508,0.1600,0.0217,0.1289
+External (Svanström),traffic engine noise,distance,12.5000,42.1697,7.1418,0.1433,0.0200,0.1280
+External (Svanström),traffic engine noise,distance,15.0000,56.2341,4.5076,0.1500,0.0200,0.1258
+External (Svanström),traffic engine noise,distance,17.5000,74.9894,1.8462,0.1450,0.0233,0.1176
+External (Svanström),traffic engine noise,distance,20.0000,100.0000,-0.8426,0.1283,0.0100,0.1024
+External (Svanström),traffic engine noise,distance,22.5000,133.3521,-3.5573,0.1033,0.0067,0.0898
+External (Svanström),traffic engine noise,distance,25.0000,177.8279,-6.2948,0.0883,0.0017,0.0724
+External (Svanström),traffic engine noise,distance,27.5000,237.1374,-9.0532,0.0467,0.0000,0.0493
+External (Svanström),traffic engine noise,distance,30.0000,316.2278,-11.8340,0.0200,0.0000,0.0339
+External (Svanström),traffic engine noise,distance,32.5000,421.6965,-14.6431,0.0133,0.0000,0.0269
+External (Svanström),traffic engine noise,distance,35.0000,562.3413,-17.4883,0.0100,0.0000,0.0245
+External (Svanström),traffic engine noise,distance,37.5000,749.8942,-20.3762,0.0100,0.0000,0.0239
+External (Svanström),traffic engine noise,distance,40.0000,1000.0000,-23.3099,0.0083,0.0000,0.0239
+External (Svanström),traffic engine noise,distance,42.5000,1333.5214,-26.2877,0.0083,0.0000,0.0240
+External (Svanström),traffic engine noise,distance,45.0000,1778.2794,-29.3023,0.0083,0.0000,0.0240
+External (Svanström),traffic engine noise,distance,47.5000,2371.3737,-32.3412,0.0083,0.0000,0.0240
+External (Svanström),traffic engine noise,distance,50.0000,3162.2777,-35.3901,0.0083,0.0000,0.0241

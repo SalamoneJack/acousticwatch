@@ -1,0 +1,16 @@
+{
+  "clips_analysed": 27736,
+  "adjacent_pairs": 27724,
+  "adjacent_similarity_median": 0.975996732711792,
+  "random_similarity_median": 0.7163925766944885,
+  "random_95th_percentile": 0.9311818242073059,
+  "fraction_adjacent_above_random95": 0.7366541624585197,
+  "run_length_quantiles": {
+    "0.5": 1.0,
+    "0.9": 7.0,
+    "0.99": 40.0,
+    "0.999": 182.6880000000001
+  },
+  "max_run_length": 698,
+  "note": "IDs are only partly present when not all shards are analysed, which cuts runs short."
+}

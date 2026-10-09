@@ -1,0 +1,18 @@
+{
+  "drone": {
+    "clips": 163591,
+    "near_duplicate_threshold": 0.9470967561006546,
+    "breaks": 24482,
+    "blocks": 161,
+    "kept_after_guard": 159841,
+    "near_duplicate_pairs_across_splits": 0
+  },
+  "no-drone": {
+    "clips": 16729,
+    "near_duplicate_threshold": 0.9407529473304749,
+    "breaks": 6955,
+    "blocks": 16,
+    "kept_after_guard": 16479,
+    "near_duplicate_pairs_across_splits": 0
+  }
+}

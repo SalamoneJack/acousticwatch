@@ -1,0 +1,335 @@
+{
+  "checkpoint_epoch": 7,
+  "thresholds_from_val": {
+    "0.5": 0.5,
+    "standard": 0.6406359076499939,
+    "strict": 0.9726234674453735
+  },
+  "splits": {
+    "val": {
+      "roc_auc": 0.9999140494161566,
+      "pr_auc": 0.9998660315233538,
+      "n_windows": 24902,
+      "n_groups": 448,
+      "0.5": {
+        "threshold": 0.5,
+        "n_pos": 7218,
+        "n_neg": 17684,
+        "tp": 7214,
+        "fn": 4,
+        "fp": 226,
+        "tn": 17458,
+        "accuracy": 0.9907637940727653,
+        "balanced_accuracy": 0.993332957911587,
+        "recall": 0.99944582986977,
+        "false_positive_rate": 0.012779914046595793,
+        "precision": 0.9696236559139785,
+        "f1": 0.9843089098103426
+      },
+      "standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 7218,
+        "n_neg": 17684,
+        "tp": 7214,
+        "fn": 4,
+        "fp": 165,
+        "tn": 17519,
+        "accuracy": 0.9932133965143362,
+        "balanced_accuracy": 0.995057680824955,
+        "recall": 0.99944582986977,
+        "false_positive_rate": 0.00933046821985976,
+        "precision": 0.9776392465103673,
+        "f1": 0.9884222785503871
+      },
+      "strict": {
+        "threshold": 0.9726234674453735,
+        "n_pos": 7218,
+        "n_neg": 17684,
+        "tp": 7213,
+        "fn": 5,
+        "fp": 17,
+        "tn": 17667,
+        "accuracy": 0.9991165368243514,
+        "balanced_accuracy": 0.9991729831845529,
+        "recall": 0.9993072873372125,
+        "false_positive_rate": 0.0009613209681067631,
+        "precision": 0.9976486860304288,
+        "f1": 0.9984772978959024
+      },
+      "clip_level_standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 7218,
+        "n_neg": 3797,
+        "tp": 7214,
+        "fn": 4,
+        "fp": 18,
+        "tn": 3779,
+        "accuracy": 0.9980027235587835,
+        "balanced_accuracy": 0.9973526225988302,
+        "recall": 0.99944582986977,
+        "false_positive_rate": 0.00474058467210956,
+        "precision": 0.9975110619469026,
+        "f1": 0.998477508650519
+      }
+    },
+    "test": {
+      "roc_auc": 0.994929843701188,
+      "pr_auc": 0.9907939445704629,
+      "n_windows": 24921,
+      "n_groups": 460,
+      "0.5": {
+        "threshold": 0.5,
+        "n_pos": 7153,
+        "n_neg": 17768,
+        "tp": 6780,
+        "fn": 373,
+        "fp": 287,
+        "tn": 17481,
+        "accuracy": 0.9735163115444806,
+        "balanced_accuracy": 0.9658507066521146,
+        "recall": 0.9478540472529009,
+        "false_positive_rate": 0.01615263394867177,
+        "precision": 0.9593887080798076,
+        "f1": 0.9535864978902954
+      },
+      "standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 7153,
+        "n_neg": 17768,
+        "tp": 6753,
+        "fn": 400,
+        "fp": 220,
+        "tn": 17548,
+        "accuracy": 0.9751213835720878,
+        "balanced_accuracy": 0.9658487986231096,
+        "recall": 0.9440794072417168,
+        "false_positive_rate": 0.012381809995497524,
+        "precision": 0.9684497346909509,
+        "f1": 0.9561093019963189,
+        "ci95_group_bootstrap": {
+          "recall": [
+            0.8183744398860584,
+            1.0
+          ],
+          "false_positive_rate": [
+            0.004872764803899625,
+            0.02580177944444933
+          ],
+          "balanced_accuracy": [
+            0.9048308190767799,
+            0.9973150086386988
+          ]
+        }
+      },
+      "strict": {
+        "threshold": 0.9726234674453735,
+        "n_pos": 7153,
+        "n_neg": 17768,
+        "tp": 6619,
+        "fn": 534,
+        "fp": 25,
+        "tn": 17743,
+        "accuracy": 0.9775691184141888,
+        "balanced_accuracy": 0.9619694924022836,
+        "recall": 0.9253460086676919,
+        "false_positive_rate": 0.0014070238631247187,
+        "precision": 0.9962372065021071,
+        "f1": 0.9594839457853157,
+        "ci95_group_bootstrap": {
+          "recall": [
+            0.7575298772478879,
+            1.0
+          ],
+          "false_positive_rate": [
+            0.0003889730224554082,
+            0.003404431555993362
+          ],
+          "balanced_accuracy": [
+            0.8779060395324914,
+            0.9997662914321044
+          ]
+        }
+      },
+      "clip_level_standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 6884,
+        "n_neg": 3765,
+        "tp": 6654,
+        "fn": 230,
+        "fp": 17,
+        "tn": 3748,
+        "accuracy": 0.9768053338341628,
+        "balanced_accuracy": 0.9810369600428424,
+        "recall": 0.9665891923300407,
+        "false_positive_rate": 0.0045152722443559095,
+        "precision": 0.9974516564233248,
+        "f1": 0.9817779417189229
+      }
+    },
+    "external_svanstrom": {
+      "roc_auc": 0.523129861111111,
+      "pr_auc": 0.4055815237635805,
+      "n_windows": 1800,
+      "n_groups": 90,
+      "0.5": {
+        "threshold": 0.5,
+        "n_pos": 600,
+        "n_neg": 1200,
+        "tp": 35,
+        "fn": 565,
+        "fp": 16,
+        "tn": 1184,
+        "accuracy": 0.6772222222222222,
+        "balanced_accuracy": 0.5225,
+        "recall": 0.058333333333333334,
+        "false_positive_rate": 0.013333333333333334,
+        "precision": 0.6862745098039216,
+        "f1": 0.10752688172043011
+      },
+      "standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 600,
+        "n_neg": 1200,
+        "tp": 24,
+        "fn": 576,
+        "fp": 10,
+        "tn": 1190,
+        "accuracy": 0.6744444444444444,
+        "balanced_accuracy": 0.5158333333333334,
+        "recall": 0.04,
+        "false_positive_rate": 0.008333333333333333,
+        "precision": 0.7058823529411765,
+        "f1": 0.07570977917981073,
+        "ci95_group_bootstrap": {
+          "recall": [
+            0.004644642857142858,
+            0.08387096774193549
+          ],
+          "false_positive_rate": [
+            0.0015864415322580645,
+            0.016968390804597687
+          ],
+          "balanced_accuracy": [
+            0.4985896911556186,
+            0.5380076022116815
+          ]
+        }
+      },
+      "strict": {
+        "threshold": 0.9726234674453735,
+        "n_pos": 600,
+        "n_neg": 1200,
+        "tp": 3,
+        "fn": 597,
+        "fp": 0,
+        "tn": 1200,
+        "accuracy": 0.6683333333333333,
+        "balanced_accuracy": 0.5025,
+        "recall": 0.005,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "f1": 0.009950248756218907,
+        "ci95_group_bootstrap": {
+          "recall": [
+            0.0,
+            0.013400641025641024
+          ],
+          "false_positive_rate": [
+            0.0,
+            0.0
+          ],
+          "balanced_accuracy": [
+            0.5,
+            0.5067003205128205
+          ]
+        }
+      },
+      "clip_level_standard": {
+        "threshold": 0.6406359076499939,
+        "n_pos": 30,
+        "n_neg": 60,
+        "tp": 0,
+        "fn": 30,
+        "fp": 0,
+        "tn": 60,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.5,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "engine_like_negatives": {
+    "svanstrom:helicopter (external)": {
+      "fpr_standard": 0.016666666666666666,
+      "fpr_strict": 0.0,
+      "n_windows": 600
+    },
+    "us8k:drilling (test)": {
+      "fpr_standard": 0.14,
+      "fpr_strict": 0.0,
+      "n_windows": 700
+    },
+    "esc50:chainsaw (test)": {
+      "fpr_standard": 0.05063291139240506,
+      "fpr_strict": 0.02531645569620253,
+      "n_windows": 79
+    },
+    "esc50:train (test)": {
+      "fpr_standard": 0.0125,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "aerosonicdb:aircraft (test)": {
+      "fpr_standard": 0.011818181818181818,
+      "fpr_strict": 0.0018181818181818182,
+      "n_windows": 1100
+    },
+    "us8k:air_conditioner (test)": {
+      "fpr_standard": 0.00125,
+      "fpr_strict": 0.0,
+      "n_windows": 800
+    },
+    "esc50:airplane (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "esc50:engine (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "esc50:hand_saw (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "esc50:helicopter (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "esc50:vacuum_cleaner (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 80
+    },
+    "us8k:engine_idling (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 731
+    },
+    "us8k:jackhammer (test)": {
+      "fpr_standard": 0.0,
+      "fpr_strict": 0.0,
+      "n_windows": 677
+    }
+  },
+  "test_fpr_hard_vs_other_negatives_standard": {
+    "hard_negatives": 0.025618567987738122,
+    "other_negatives": 0.007802439209150822
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "assumptions": {
+    "snr_at_0db_attenuation": 20.0,
+    "reference_distance_m": 10.0,
+    "absorption": "ISO 9613-1, 20C, 70% RH"
+  },
+  "false_alarm_floor_background_only": {
+    "pink noise": {
+      "standard": 0.0,
+      "strict": 0.0
+    },
+    "outdoor ambience": {
+      "standard": 0.0,
+      "strict": 0.0
+    },
+    "traffic engine noise": {
+      "standard": 0.013679890560875513,
+      "strict": 0.0
+    }
+  },
+  "crossings": {
+    "DADS test | outdoor ambience | broadband": {
+      "standard_recall90_attenuation_db": 16.805555555555554,
+      "standard_recall50_attenuation_db": 19.964476021314386,
+      "recall_at_0db_standard": 0.993,
+      "strict_recall90_attenuation_db": 14.158415841584157,
+      "strict_recall50_attenuation_db": 17.34015345268542
+    },
+    "DADS test | outdoor ambience | distance": {
+      "standard_recall90_attenuation_db": 15.936254980079681,
+      "standard_recall90_distance_m_assumed": 62.634375122663826,
+      "standard_recall90_snr_db": 4.063745019920319,
+      "standard_recall50_attenuation_db": 19.24822415153907,
+      "standard_recall50_distance_m_assumed": 91.70884155596983,
+      "standard_recall50_snr_db": 0.7517758484609303,
+      "recall_at_0db_standard": 0.993,
+      "strict_recall90_attenuation_db": 13.217636022514071,
+      "strict_recall90_distance_m_assumed": 45.80172144261725,
+      "strict_recall90_snr_db": 6.782363977485929,
+      "strict_recall50_attenuation_db": 16.541353383458645,
+      "strict_recall50_distance_m_assumed": 67.15334791115143,
+      "strict_recall50_snr_db": 3.4586466165413547
+    },
+    "DADS test | pink noise | broadband": {
+      "standard_recall90_attenuation_db": 20.00348189415042,
+      "standard_recall50_attenuation_db": 22.092618384401113,
+      "recall_at_0db_standard": 0.9936666666666667,
+      "strict_recall90_attenuation_db": 17.477064220183486,
+      "strict_recall50_attenuation_db": 19.692532942898975
+    },
+    "DADS test | pink noise | distance": {
+      "standard_recall90_attenuation_db": 19.226190476190474,
+      "standard_recall90_distance_m_assumed": 91.4764966681793,
+      "standard_recall90_snr_db": 0.7738095238095255,
+      "standard_recall50_attenuation_db": 21.72979797979798,
+      "standard_recall50_distance_m_assumed": 122.03654366237055,
+      "standard_recall50_snr_db": -1.7297979797979792,
+      "recall_at_0db_standard": 0.9936666666666667,
+      "strict_recall90_attenuation_db": 16.658163265306122,
+      "strict_recall90_distance_m_assumed": 68.06254171338263,
+      "strict_recall90_snr_db": 3.341836734693878,
+      "strict_recall50_attenuation_db": 19.337449933244326,
+      "strict_recall50_distance_m_assumed": 92.6557757867392,
+      "strict_recall50_snr_db": 0.6625500667556743
+    },
+    "DADS test | traffic engine noise | broadband": {
+      "standard_recall90_attenuation_db": 16.036184210526315,
+      "standard_recall50_attenuation_db": 21.532846715328468,
+      "recall_at_0db_standard": 0.9926666666666667,
+      "strict_recall90_attenuation_db": 13.532967032967033,
+      "strict_recall50_attenuation_db": 17.51736111111111
+    },
+    "DADS test | traffic engine noise | distance": {
+      "standard_recall90_attenuation_db": 15.611854684512428,
+      "standard_recall90_distance_m_assumed": 60.33825335065977,
+      "standard_recall90_snr_db": 4.388145315487572,
+      "standard_recall50_attenuation_db": 21.065573770491802,
+      "standard_recall50_distance_m_assumed": 113.05211419439779,
+      "standard_recall50_snr_db": -1.0655737704918025,
+      "recall_at_0db_standard": 0.9926666666666667,
+      "strict_recall90_attenuation_db": 12.921974522292993,
+      "strict_recall90_distance_m_assumed": 44.26889953248845,
+      "strict_recall90_snr_db": 7.078025477707007,
+      "strict_recall50_attenuation_db": 16.78609062170706,
+      "strict_recall50_distance_m_assumed": 69.0723975754606,
+      "strict_recall50_snr_db": 3.2139093782929393
+    },
+    "External (Svanstr\u00f6m) | outdoor ambience | broadband": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.12666666666666668,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    },
+    "External (Svanstr\u00f6m) | outdoor ambience | distance": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.12666666666666668,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    },
+    "External (Svanstr\u00f6m) | pink noise | broadband": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.13333333333333333,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    },
+    "External (Svanstr\u00f6m) | pink noise | distance": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.13333333333333333,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    },
+    "External (Svanstr\u00f6m) | traffic engine noise | broadband": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.12166666666666667,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    },
+    "External (Svanstr\u00f6m) | traffic engine noise | distance": {
+      "standard_recall90_attenuation_db": null,
+      "standard_recall50_attenuation_db": null,
+      "recall_at_0db_standard": 0.12166666666666667,
+      "strict_recall90_attenuation_db": null,
+      "strict_recall50_attenuation_db": null
+    }
+  }
+}
