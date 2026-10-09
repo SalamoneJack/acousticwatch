@@ -1,0 +1,84 @@
+{
+  "n_test_clips": 3000,
+  "chance_level_median_deg": 90.0,
+  "clean_same_clips": {
+    "cnn_both": {
+      "median_deg": 15.623,
+      "mae_deg": 46.849
+    },
+    "cnn_timing": {
+      "median_deg": 22.602,
+      "mae_deg": 56.685
+    },
+    "cnn_spectral": {
+      "median_deg": 18.376,
+      "mae_deg": 48.142
+    },
+    "srp_phat": {
+      "median_deg": 12.0,
+      "mae_deg": 53.706
+    }
+  },
+  "thresholds": {
+    "diffuse ambience | cnn_both": {
+      "snr30_median": 22.006,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 10.0
+    },
+    "diffuse ambience | cnn_spectral": {
+      "snr30_median": 25.26,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 15.0
+    },
+    "diffuse ambience | cnn_timing": {
+      "snr30_median": 23.602,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 5.0
+    },
+    "diffuse ambience | srp_phat": {
+      "snr30_median": 19.0,
+      "lowest_snr_with_median_le_20deg": 30.0,
+      "lowest_snr_with_median_le_45deg": 5.0
+    },
+    "directional engine | cnn_both": {
+      "snr30_median": 17.606,
+      "lowest_snr_with_median_le_20deg": 30.0,
+      "lowest_snr_with_median_le_45deg": 10.0
+    },
+    "directional engine | cnn_spectral": {
+      "snr30_median": 19.381,
+      "lowest_snr_with_median_le_20deg": 30.0,
+      "lowest_snr_with_median_le_45deg": 15.0
+    },
+    "directional engine | cnn_timing": {
+      "snr30_median": 30.258,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 30.0
+    },
+    "directional engine | srp_phat": {
+      "snr30_median": 35.0,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 30.0
+    },
+    "spatially white | cnn_both": {
+      "snr30_median": 19.659,
+      "lowest_snr_with_median_le_20deg": 30.0,
+      "lowest_snr_with_median_le_45deg": -5.0
+    },
+    "spatially white | cnn_spectral": {
+      "snr30_median": 21.416,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 0.0
+    },
+    "spatially white | cnn_timing": {
+      "snr30_median": 23.373,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 0.0
+    },
+    "spatially white | srp_phat": {
+      "snr30_median": 21.5,
+      "lowest_snr_with_median_le_20deg": null,
+      "lowest_snr_with_median_le_45deg": 10.0
+    }
+  }
+}

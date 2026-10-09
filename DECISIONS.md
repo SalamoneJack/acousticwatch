@@ -87,3 +87,47 @@ Chronological record of every non-trivial decision made while building AcousticW
   split. The earlier results (fixed 1000-ID blocks with 100-ID guards) are kept in
   `results/archive_fixed_block_split/` for comparison. The v2-versus-v1 decision was made on the old split and
   is not re-run; v2 stays rejected.
+- **Localization training stall (GPU contention).** Re-running the geometry calibration (to fix a plot label) at the
+  same time as localization training filled VRAM (7.9/8 GB). Windows (WDDM) then paged GPU memory into system RAM
+  instead of raising a CUDA out-of-memory error, so the OOM back-off never triggered and both jobs crawled
+  (training made no progress for about 11 minutes, GPU utilisation 2%). Both were stopped, and training resumed
+  from its epoch-2 checkpoint. **Rule adopted: one GPU job at a time.** Only the figure was regenerated afterwards;
+  the geometry was fitted once and is unchanged.
+- **Localization checkpoint selection: validation median, not mean.** Validation *mean* bearing error is dominated
+  by a heavy tail of large misses and barely moved during training (about 31–42° for every epoch). "Best mean"
+  therefore picked epoch 0 (combined model) or epoch 2 (spectral), both under-trained. The *median* tracks the
+  typical clip and improved steadily (combined 13.5° → 10.1°). All three models are re-selected by lowest
+  validation median (`localization/scripts/select_checkpoint.py`). This is still validation-only; the test split
+  was not looked at.
+- **Localization training.** 25 epochs per model, batch 64, fp16, about 23 s per epoch, peak GPU temperature 55 °C,
+  no thermal pauses, no OOM.
+
+## 2026-10-09 — localization stage (added on request: `localization/` in the same repo)
+
+- **Dataset:** DDL (Zenodo 6459183, CC BY 4.0) was available, so no fallback was needed. Only the *real*
+  recording archive is used (12.6 GB). The synthetic archive (4.6 GB) was skipped, both to keep every number
+  grounded in real acoustics and because disk space was tight (97–99% full).
+- **Download strategy:** stream the zip with HTTP range requests and decode on the fly into 8-channel 48 kHz
+  float16 shards (all channels preserved). 96 → 48 kHz is ample: rotor harmonics are below 8 kHz, and
+  GCC-PHAT uses 4× lag interpolation for sub-sample delays.
+- **File names:** the documented character offsets are wrong by one (the timestamp has 14 digits), so parsing
+  uses a regular expression. Clips with range < 10 m or altitude < 20 m (take-off, landing, negative-altitude
+  rows) are excluded, because their GPS bearings are unreliable. That leaves 60,769 of 62,103 clips.
+- **Split unit:** the trial folder (one continuous flight recording). Trials are stratified by drone model and
+  median range and dealt round-robin into train, train, val, train, test. Result: 22 / 7 / 6 trials. No
+  trial-level overlap (`localization/results/split_report.json`).
+- **Array geometry:** not published, so it is fitted from training clips (far-field TDOA model, Huber loss,
+  6 random starts). The fit recovers a planar 37 cm array with four 7–8 cm mic pairs, matching the paper's
+  description. It is used for the SRP-PHAT baseline and for rendering directional noise.
+- **GCC lag window:** ±64 samples at 48 kHz (±1.33 ms), chosen from measured pair TDOAs (most ≤ 40 samples).
+- **Noise for robustness:** DDL has no drone-free real recordings. Instead, three noise fields are added to
+  test clips: spatially white noise, diffuse outdoor ambience (AeroSonicDB environment recordings, an
+  independent segment per channel), and a directional traffic engine (UrbanSound8K engine idling, rendered
+  with the calibrated geometry from a random direction). All noise audio comes from the detection stage's
+  *test* split.
+- **Diagnosis of the large test errors** (`localization/results/test_signal_quality.parquet`): the errors track
+  GCC-PHAT coherence, and in two flights the array locks onto a fixed competing source (about 240° on 29 March;
+  the opposite side during the 149 m hover). Recording levels differ by about 18 dB between the two days.
+- **Range caveat:** altitude is about 30 m in every flight, so range is largely the elevation angle, and the
+  per-day gain difference also leaks loudness information. The range numbers are reported but flagged as not
+  transferable.
